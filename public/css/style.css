@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(to right, #f8fbff, #f2f6fc);
+    color: #333;
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+/* Navbar */
+nav {
+    background-color: #7D9D9C;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 12px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 18px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #B5DBCB;
+    color: #333;
+    border-radius: 8px;
+}
+
+/* Content */
+.content {
+    padding: 30px;
+    margin-top: 60px;
+}
+
+/* Footer */
+footer {
+    background-color: #7D9D9C;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+/* Forms */
+form {
+    background: white;
+    padding: 30px;
+    margin: 40px auto;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #7D9D9C;
+    outline: none;
+    box-shadow: 0 0 5px rgba(125, 157, 156, 0.5);
+}
+
+/* Buttons */
+button {
+    background: linear-gradient(to right, #7D9D9C, #A5C9CA);
+    color: white;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to right, #6c8c8a, #9ab7b8);
+}
+
+/* Headings and Important Text */
+h1, h2, h3, strong {
+    font-weight: 700;
+    color: #2C3E50;
+    margin-bottom: 10px;
+}
+
+/* Task List */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: white;
+    margin: 10px auto;
+    padding: 15px;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Flash Messages */
+.flash-message {
+    background-color: #90EE90;
+    color: black;
+    padding: 10px;
+    margin: 10px auto;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 5px;
+}
+
+/* Error Messages */
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+/* Misc spacing */
+.section {
+    padding: 40px 20px;
+}
+
+.hero {
+    padding: 80px 20px;
+    background: linear-gradient(to right, #eef5f9, #f6f9fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    text-align: center;
+}
+
+.hero-text {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    color: #2C3E50;
+    margin-bottom: 10px;
+}
+
+.hero-text .highlight {
+    color: #7D9D9C;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button {
+    padding: 12px 24px;
+    background: #7D9D9C;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.button:hover {
+    background: #5e817f;
+}
+
+.button.ghost {
+    background: transparent;
+    border: 2px solid #7D9D9C;
+    color: #7D9D9C;
+}
+
+.button.ghost:hover {
+    background: #e9f5f4;
+}
+
+/* Hero Animation */
+.fade-in {
+    animation: fadeIn 1s ease-in-out both;
+}
+.fade-in-delayed {
+    animation: fadeIn 1s ease-in-out 0.8s both;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Quote */
+.quote {
+    margin-top: 40px;
+    font-size: 1.1rem;
+    color: #444;
+    font-style: italic;
+}
+
+/* Button Hover Animation */
+.button:hover {
+    transform: scale(1.05) translateY(-2px);
+    background: #5e817f;
+}
