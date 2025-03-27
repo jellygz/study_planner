@@ -95,13 +95,10 @@ npm run migrate
 npm start
 ```
 
-The application should now be running at `http://localhost:3000/`.
+The application should now be running at `http://localhost:3002/`.
 
 ## Troubleshooting
 
 - If you encounter database connection issues, verify your PostgreSQL service is running.
 - Check your `.env` file for correct database credentials.
 - Run `npm install` again if dependencies are missing.
-
-Happy coding! 🚀
-# study_planner
